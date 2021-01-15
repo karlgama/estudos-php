@@ -10,4 +10,5 @@ interface StudentRepository
     public function studentsBirthAt(\DateTimeInterface $birthDate): array;
     public function save(Student $student): bool;
     public function remove(Student $student): bool;
+    public function studentWithPhones(): array;
 }
